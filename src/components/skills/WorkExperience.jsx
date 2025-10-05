@@ -1,9 +1,30 @@
-const WorkExporiens = () =>{
+import {workExperience} from "../../data/workExperience.js";
+
+
+const WorkExperience = () =>{
     return(
-        <div>
-            <h1>Work Experience</h1>
-            <p>Work Experience</p>
+
+      <div className="education work-exp">
+        <h3
+          className="work-exp-title"
+        >Work &amp; Experience
+        </h3>
+        <div className="skills-info">
+          {workExperience.map((item,index) => (
+          <div
+            className="experience-card" key={index}>
+            <div className="upper">
+              <h3>{item.title}</h3>
+              <h5>{item.subTitle}</h5>
+              <span>{item.period}</span></div>
+            <div className="hr"></div>
+            <h4 className="label">{item.company}</h4>
+            <p>I{item.description}</p>
+          </div>
+            ))}
+
         </div>
+      </div>
     )
 }
-export default WorkExporiens;
+export default WorkExperience;
