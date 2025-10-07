@@ -177,6 +177,7 @@ a.nav__menu-link {
 	color: var(--first-color);
 	font-size: var(--normal-font-size);
 	transition: .3s linear;
+	cursor: pointer;
 }
 
 .nav-link.active,
