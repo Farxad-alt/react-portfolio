@@ -1,17 +1,7 @@
 export const skills = [
-  {
-    sill: "HTML", level: "90%"
-  },
-  {
-    sill: "CSS", level: "85%"
-  },
-  {
-    sill: "JavaScript", level: "70%"
-  },
-  {
-    sill: "React", level: "60%"
-  },
-  {
-    sill: "PHP", level: "80%"
-  }
+  { skill: "HTML", level: "95%" },
+  { skill: "CSS", level: "85%" },
+  { skill: "JavaScript", level: "65%" },
+  { skill: "jQuery", level: "80%" },
+  { skill: "PHP", level: "75%" },
 ]

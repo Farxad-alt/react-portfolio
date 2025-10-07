@@ -1,19 +1,21 @@
-import {skills} from "../../data/skills.js";
+import { skills } from "../../data/skills.js";
 
 const Skills = () => {
   return (
     <div className="education">
       <h4 className="label">Skills</h4>
       <ul className="bars">
-        {skills.map((item,index) => (
-        <li className="bar" key={index}>
-          <div className="info"><span>{item.sill}</span><span>{item.level}</span>
-          </div>
-          <div className="line html"></div>
-        </li>
-       ))}
+        {skills.map((skill, index) => (
+          <li key={index} className="bar">
+            <div className="info">
+              <span>{skill.skill}</span>
+              <span>{skill.level}</span>
+            </div>
+            <div className={`line ${skill.skill.toLowerCase()}`}></div>
+          </li>
+        ))}
       </ul>
     </div>
-  )
-}
-export default Skills
+  );
+};
+export default Skills;
