@@ -59,4 +59,14 @@
 }
 
 
+@media (max-width: 767px) {
+
+	.client-swiper .swiper-button-prev,
+	.client-swiper .swiper-button-next {
+		display: none;
+	}
+
+}
+
+
 /* === end Our Clients section === */

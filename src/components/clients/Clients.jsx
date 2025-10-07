@@ -1,7 +1,7 @@
 import "./Clients.css";
 import { clientData } from "../../data/clients";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -15,16 +15,20 @@ function Clients() {
         <SectionTitle title="Our Clients" subtitle="Our Clients" />
         <div className="our-client-wrapper">
           <Swiper
-            modules={[Navigation, Pagination]}
+            modules={[Autoplay, Pagination, Navigation]}
             spaceBetween={30}
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
             loop={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             className="client-swiper"
           >
             {clientData.map((client) => (
-              <SwiperSlide key={client.id}>
+              <SwiperSlide key={client.item}>
                 <div
                   className="swiper-slide swiper-slide-next"
                   data-swiper-slide-index="2"

@@ -5,7 +5,7 @@ import "./Services.css";
 
 const Services = () => {
   return (
-    <section className="services section" id="services">
+    <section className="services section" id="Services">
       <div className="container flex-center">
         <SectionTitle title="Services" subtitle="Services" />
         <div className="services-wrapper">

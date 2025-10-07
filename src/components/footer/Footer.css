@@ -1,5 +1,5 @@
 /* ======= footer section ======= */
-.footer {
+footer {
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
@@ -26,6 +26,13 @@
 	font-size: var(--normal-font-size);
 	font-weight: 300;
 	margin-bottom: 30px;
+}
+
+.info-group li,
+.follow-group li {
+	cursor: pointer;
+
+
 }
 
 .info-group,

@@ -1,13 +1,19 @@
-import "./Contact.css"
-
-
+import SectionTitle from "../sectionTitle/SectionTitle";
+import "./Contact.css";
+import ContactLeft from "./ContactLeft";
+import ContactRight from "./ContactRight";
 const Contact = () => {
-	return (
-		<div>
+  return (
+    <section className="contact section" id="Contact">
+      <div className="container flex-center">
+        <SectionTitle title="Contact Me" subtitle="Contact Me" />
+        <div className="contact-wrapper">
+          <ContactLeft />
+          <ContactRight />
+        </div>
+      </div>
+    </section>
+  );
+};
 
-		</div>
-	)
-}
-
-export default Contact
-
+export default Contact;

@@ -125,35 +125,7 @@ body {
   padding: 0 15px;
 }
 
-/* Scroll to top button  */
-.scrollToTop {
-  position: fixed;
-  right: 0;
-  bottom: 20px;
-  width: 45px;
-  height: 45px;
-  background: var(--second-color);
-  color: #fff;
-  font-size: var(--small-font-size);
-  border-radius: 3px;
-  cursor: pointer;
-  z-index: -1;
-  box-shadow: var(--box-shadow);
-  opacity: 0;
-  visibility: hidden;
-  transition: .3s linear;
-}
 
-.scrollToTop.flex-center {
-  justify-content: center;
-}
-
-.scrollToTop.active {
-  z-index: 10;
-  opacity: 1;
-  visibility: visible;
-  right: 20px;
-}
 
 /* ======= theme button Light/Dark ======= */
 .them-btn {
@@ -231,15 +203,3 @@ main {
 }
 
 /* ======= Styles for all sections======= */
-.section {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  padding: 60px 0 20px;
-}
-
-.flex-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}

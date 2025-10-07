@@ -27,7 +27,7 @@
 	margin-bottom: 10px;
 }
 
-.contact-list h3 i {
+.contact-list h3 svg {
 	color: var(--second-color);
 	font-size: 30px;
 	margin-right: 10px;
@@ -91,10 +91,16 @@
 .second-row {
 	display: flex;
 	justify-content: space-between;
+	gap: 10px;
 }
 
 .second-row input {
-	width: 48%;
+	width: 100%;
+}
+
+.contact-btn {
+	width: 225px;
+	gap: 18px;
 }
 
 /* === end Contact section === */

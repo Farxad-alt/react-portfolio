@@ -9,13 +9,14 @@ import {
   Services,
   Clients,
   GetInTouch,
+  ScrollToTop,
+  ThemeToggle,
 } from "./components/index";
 
 function App() {
   return (
     <>
       <Header />
-
       <main className="container">
         <Home />
         <About />
@@ -27,6 +28,8 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <ScrollToTop />
+      <ThemeToggle />
     </>
   );
 }

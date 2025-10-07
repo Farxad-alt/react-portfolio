@@ -18,5 +18,11 @@ export const clientData = [
 		title: "Client Name",
 		subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
 		position: "Marketting Manager",
+	},
+	{
+		image: clients2,
+		title: "Client Name",
+		subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+		position: "Marketting Manager",
 	}
 ]

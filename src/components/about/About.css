@@ -67,4 +67,9 @@
 	font-size: var(--small-font-size);
 }
 
+.about-wrapper {
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 /* === end About section === */
