@@ -21,6 +21,7 @@
 	overflow: hidden;
 	cursor: pointer;
 	box-shadow: var(--box-shadow);
+	transition: .5s linear;
 }
 
 .portfolio-img-card .overlay {
@@ -51,7 +52,7 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	transition: .5s linear;
+
 }
 
 
@@ -88,10 +89,10 @@
 }
 
 .portfolio-model.active {
-	transition: .5s linear;
 	visibility: visible;
 	opacity: 1;
 	z-index: 11;
+	transition: .5s linear;
 }
 
 .portfolio-model-body {
@@ -102,14 +103,64 @@
 	padding: 40px;
 	border-radius: 10px;
 	box-shadow: var(--box-shadow);
-	transition: .5s linear;
 	transform: translateY(-50px);
+	transition: .5s linear;
 }
 
-.portfolio-model.active .portfolio-model-body {
-	transform: translateY(0);
-	transition: .5s linear;
+/* Анимация открытия */
+@keyframes slideIn {
+	0% {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
+
+
+/* Анимация закрытия */
+@keyframes slideOut {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+}
+
+
+
+/* Состояние активного popup */
+.portfolio-model.active .portfolio-model-body {
+	animation: slideIn 0.9s forwards;
+}
+
+/* Состояние неактивного popup */
+.portfolio-model:not(.active) .portfolio-model-body {
+	animation: slideOut 0.9s forwards;
+	display: none;
+	/* Скрываем элемент после анимации */
+}
+
+/* .portfolio-model.active .portfolio-model-body {
+	animation: slideIn 0.9s forwards;
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateY(-100px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+} */
 
 .portfolio-model-body h3 {
 	font-size: 32px;

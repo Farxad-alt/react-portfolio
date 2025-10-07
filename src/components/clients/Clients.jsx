@@ -6,6 +6,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import SectionTitle from "../sectionTitle/SectionTitle";
+import { motion } from "framer-motion";
+import { slideVariants } from "../../utils/animate";
 // import Clients from "../../data/clients";
 
 function Clients() {
@@ -13,7 +15,13 @@ function Clients() {
     <section className="section our-client" id="Clients">
       <div className="container flex-center">
         <SectionTitle title="Our Clients" subtitle="Our Clients" />
-        <div className="our-client-wrapper">
+        <motion.div
+          className="our-client-wrapper"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.5 }}
+          variants={slideVariants("top", 0.7, -70, true)}
+        >
           <Swiper
             modules={[Autoplay, Pagination, Navigation]}
             spaceBetween={30}
@@ -47,7 +55,7 @@ function Clients() {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

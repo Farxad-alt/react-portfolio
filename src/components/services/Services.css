@@ -29,7 +29,7 @@
 	color: var(--second-color);
 	font-size: 48px;
 	margin-bottom: 20px;
-	transition: .3s linear;
+	/* transition: .3s linear; */
 }
 
 .service-card h3 {
@@ -121,11 +121,13 @@
 	margin-bottom: 20px;
 	transition: 0.3s linear;
 }
-.modal-close-btn{
+
+.modal-close-btn {
 	position: absolute;
 	top: 0;
 	right: 0;
 	margin: 20px;
 	cursor: pointer;
 }
+
 /* === end Services section === */
